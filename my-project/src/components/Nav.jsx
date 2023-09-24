@@ -1,6 +1,5 @@
 import { hamburger } from "../assets/icons";
-import { headerLogo } from "../assets/images"; // Assuming you have a 'headerLogo.png' image in your assets folder
-
+import {Link} from "react-router-dom";
 const Nav = () => {
   return (
     <header className='px-4 py-8 absolute z-10 w-full'>
@@ -10,9 +9,9 @@ const Nav = () => {
           <span className='text-3xl font-bold'>Fix It</span>
         </a>
         <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden'>
-          <a href='/'>Sign in</a>
+          <a href='/Signup'>Sign in</a>
           <span>/</span>
-          <a href='/'>Explore now</a>
+          <a href='/Login'>Log in</a>
         </div>
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />

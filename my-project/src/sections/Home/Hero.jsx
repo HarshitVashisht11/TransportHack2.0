@@ -1,8 +1,11 @@
-import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
-
+import Button from "../../components/Button";
+import { arrowRight } from "../../assets/icons";
+import Nav from "../../components/Nav";
+import {Link} from "react-router-dom";
 const Hero = () => {
   return (
+    <>
+    <Nav />
     <section
       id='home'
       className='w-full flex xl:flex-row flex-col justify-center items-center min-h-screen gap-10 max-container'
@@ -13,19 +16,20 @@ const Hero = () => {
             Fix The Road
           </span>
           <br />
-          <span className='text-coral-red inline-block mt-3'>With</span>
+          <span className='inline-block mt-3'>With</span>
           <br />
-          <span className='text-coral-red inline-block'>Fix It</span>
+          <span className=' text-cyan-400 inline-block'>Fix It</span>
         </h1>
         <p className='font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
           Help improve road safety by reporting and fixing road defects in your community.
         </p>
-        <Button label='Get Started'/>
+        <Link to="/Login"><Button label='Get Started'/></Link>
       </div>
       <div className='hidden xl:block xl:w-3/5 xl:h-auto'>
 
       </div>
     </section>
+    </>
   );
 };
 
