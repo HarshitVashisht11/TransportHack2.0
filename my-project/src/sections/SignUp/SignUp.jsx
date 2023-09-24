@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-
 import { auth } from '../firebase';
 
 function Signup() {
@@ -31,7 +30,7 @@ function Signup() {
     try {
       await createUserWithEmailAndPassword(auth, values.email, values.password);
       setSubmitButtonDisabled(false);
-      navigate('/');
+      navigate('/Dashboard');
     } catch (err) {
       setSubmitButtonDisabled(false);
       setErrorMsg(err.message);

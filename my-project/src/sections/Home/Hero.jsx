@@ -2,6 +2,7 @@ import Button from "../../components/Button";
 import { arrowRight } from "../../assets/icons";
 import Nav from "../../components/Nav";
 import {Link} from "react-router-dom";
+import Footer from "../../components/Footer";
 const Hero = () => {
   return (
     <>
@@ -26,9 +27,9 @@ const Hero = () => {
         <Link to="/Login"><Button label='Get Started'/></Link>
       </div>
       <div className='hidden xl:block xl:w-3/5 xl:h-auto'>
-
       </div>
     </section>
+    <Footer />
     </>
   );
 };

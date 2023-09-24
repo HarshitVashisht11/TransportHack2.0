@@ -24,7 +24,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, values.email, values.password);
       setSubmitButtonDisabled(false);
-      navigate("/");
+      navigate("/Dashboard");
     } catch (err) {
       setSubmitButtonDisabled(false);
       setErrorMsg(err.message);
