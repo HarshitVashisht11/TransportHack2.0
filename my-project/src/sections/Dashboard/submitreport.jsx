@@ -116,7 +116,7 @@ function SubmitReport() {
         </form>
         {errorMsg && <p className="text-red-500">{errorMsg}</p>}
         <p className="mt-4 text-center">
-          <Link to="/Dashboard" classQName="text-cyan-600">Back to Dashboard</Link>
+          <Link to="/Dashboard" className="text-cyan-600">Back to Dashboard</Link>
         </p>
       </div>
     </div>
