@@ -9,9 +9,15 @@ const Nav = () => {
           <span className='text-3xl font-bold'>Fix It</span>
         </a>
         <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden'>
-          <a href='/Signup'>Sign in</a>
+          <a href='/About'>About</a>
+          <span>                 </span>
+          <a href='/Contact'>Contact</a>
+          <span>                 </span>
+          <a href='/Complaint'>Complaint</a>
+          <span>                 </span>
+          <a href='/Signup'>Sign In</a>
           <span>/</span>
-          <a href='/Login'>Log in</a>
+          <a href='/Login'>Sign Up</a>
         </div>
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />
