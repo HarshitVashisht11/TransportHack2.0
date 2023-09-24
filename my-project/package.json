@@ -10,14 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.19.2",
+=======
+    "bootstrap": "^5.3.2",
+>>>>>>> d39996e9a1241539bd75d96e036f1353fbf9ce04
     "firebase": "^10.4.0",
     "google-map-react": "^2.2.1",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
+<<<<<<< HEAD
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
+=======
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+>>>>>>> d39996e9a1241539bd75d96e036f1353fbf9ce04
     "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
